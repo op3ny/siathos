@@ -1,5 +1,5 @@
 # Siath OS
-
+## Made by [Thaís (op3n/op3ny)](https://github.com/op3ny)
 > Sistema operacional microkernel de código aberto para **x86_64 (UEFI)**, escrito do zero em **C e Assembly**.
 > Release: **Siath OS v1.0.0 alpha — "Independent System"** · 2026-09-22 · ABI 1.6 (SYS_COUNT=38)
 
