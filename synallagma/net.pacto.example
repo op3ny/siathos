@@ -1,0 +1,16 @@
+[contrato]
+nome = "catallaxy.net"
+acao = "/techne/net --voluntario"
+voluntario = true
+revogavel = true
+caps = ["aisthesis", "catallaxy"]
+descricao = "Rede como ordem espontanea — sem daemon central, contrato revogavel"
+
+[contrato.dependencias]
+# nenhuma dependencia coercitiva — ordem espontanea
+voluntarias = ["aisthesis.pci"]
+
+[contrato.mercado]
+# pode ser instalado via emporion
+pacote = "hayek-net"
+agora = "https://agora.thais-os.example/hayek-net"

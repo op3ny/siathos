@@ -1,0 +1,15 @@
+build/
+src/kernel/*_elf.h
+src/kernel/*_cfg.h
+
+*.o
+*.elf
+*.iso
+*.img
+*.fd
+ovmf/
+__pycache__/
+.vscode/
+*.log
+Thais-OS.zip
+.prosseguir.marker
