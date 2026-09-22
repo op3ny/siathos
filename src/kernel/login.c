@@ -9,7 +9,7 @@ void login_main(thais_fb_t *fb){
     fb_console_clear();
     // bootstrap: se nenhum usuario, cria admin inicial
     if(auth_user_count()==0){
-        fb_console_write("=== Siaht OS — Primeiro acesso ===\n");
+        fb_console_write("=== Siath OS — Primeiro acesso ===\n");
         fb_console_write("Nenhum usuario encontrado. Crie o administrador.\n");
         serial_write("bootstrap: nenhum usuario\n");
         for(;;){
@@ -34,7 +34,7 @@ void login_main(thais_fb_t *fb){
             } else { fb_console_write("falha ao criar.\n"); }
         }
     }
-    fb_console_write("=== Siaht OS — Login (contrato voluntario) ===\n");
+    fb_console_write("=== Siath OS — Login (contrato voluntario) ===\n");
     fb_console_write("Made with love by Thais (op3n/op3ny)\n");
     for(;;){
         fb_console_write("\nusuario: ");

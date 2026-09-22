@@ -14,7 +14,7 @@
 #include "../spud.h"
 
 static void bootstrap(void){
-    spud_write("=== Siaht OS — Primeiro acesso ===\n");
+    spud_write("=== Siath OS — Primeiro acesso ===\n");
     spud_write("Nenhum usuario encontrado. Crie o administrador.\n");
     char user[32], pass[32], pass2[32];
     for(;;){
@@ -48,7 +48,7 @@ static int ask_contracts(void){
 int main(int argc, char **argv){
     (void)argc; (void)argv;
     if(!spud_auth_count()) bootstrap();
-    spud_write("=== Siaht OS — Login (contrato voluntario) ===\n");
+    spud_write("=== Siath OS — Login (contrato voluntario) ===\n");
     spud_write("Made with love by Thais (op3n/op3ny)\n");
     char user[32], pass[32];
     for(;;){

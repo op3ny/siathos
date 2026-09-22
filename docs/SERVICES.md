@@ -1,4 +1,4 @@
-# Siaht OS — Serviços: o que são hoje vs. arquitetura-alvo
+# Siath OS — Serviços: o que são hoje vs. arquitetura-alvo
 
 > Documento das Auditorias (2) e (4): registra **honestamente** o estado atual de
 > "Synallagma como serviço" e de "init/login/shell em ring 3", sem tratar plano

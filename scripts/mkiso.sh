@@ -4,7 +4,7 @@ set -e
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 BUILD="$ROOT/build"
 ESP="$BUILD/esp.img"
-ISO="${ISO_OUT:-$BUILD/siaht.iso}"
+ISO="${ISO_OUT:-$BUILD/siath.iso}"
 MKISO="$BUILD/mkiso_root"
 mkdir -p "$BUILD" "$MKISO"
 

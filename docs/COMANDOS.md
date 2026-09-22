@@ -1,4 +1,4 @@
-# Siaht OS — Comandos Originais (thais-sh)
+# Siath OS — Comandos Originais (thais-sh)
 
 Shell `thais-sh` não é bash. Sintaxe própria, comandos em grego transliterado.
 

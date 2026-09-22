@@ -1,4 +1,4 @@
-# Siaht OS — Syscall ABI 1.6
+# Siath OS — Syscall ABI 1.6
 
 Interface oficial e estável entre userspace e kernel. **Não mude números retroativamente.**
 ABI 1.6 = superfície de serviço do `synd` (contratos em ring 3) — **sem syscalls

@@ -281,7 +281,7 @@ int fs_list(const char *dir, char *out, size_t out_max){
 }
 
 void fs_init_defaults(void){
-    /* Estrutura de pastas do Siaht OS (userspace enxuto):
+    /* Estrutura de pastas do Siath OS (userspace enxuto):
        /bin        — aplicacoes do usuario (executaveis + .cfg de manifesto)
        /kormi      — apps iniciados com o sistema ANTES do login (drivers,
                      servicos essenciais); sao ELF normais, spawnados por init
@@ -297,7 +297,7 @@ void fs_init_defaults(void){
         "/oikos","/synallagma","/aisthesis","/kinesis","/nomos","/paradosis",0
     };
     for(int i=0;dirs[i];i++) fs_create(dirs[i],FS_TYPE_DIR);
-    const char *welcome="Siaht OS - Made with love by Thais (op3n/op3ny)\nSistema de arquivos voluntario (ramfs), sem root.\nTente: horasis, metabasis, ktisis, graphe\n";
+    const char *welcome="Siath OS - Made with love by Thais (op3n/op3ny)\nSistema de arquivos voluntario (ramfs), sem root.\nTente: horasis, metabasis, ktisis, graphe\n";
     fs_create("/idios/thais/boas_vindas.txt",FS_TYPE_FILE);
     fs_write("/idios/thais/boas_vindas.txt",welcome,strlen(welcome));
     const char *manifest="Praxeologia: toda acao e praxis. Sem coercente central, ordem emerge de contratos.\n";
@@ -349,5 +349,5 @@ void fs_init_defaults(void){
         snprintf(src,FS_NAME_MAX,"/bin/%s",s_mods[i].nome);
         fs_copy(src,dst);
     }
-    kprint("[arkhe] arvore Siaht OS montada (modulos em /bin e /kormi)\n");
+    kprint("[arkhe] arvore Siath OS montada (modulos em /bin e /kormi)\n");
 }

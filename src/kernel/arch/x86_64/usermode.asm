@@ -1,4 +1,4 @@
-; Siaht OS - suporte a user mode (ring 3) x86_64
+; Siath OS - suporte a user mode (ring 3) x86_64
 ; enter_user : transicao ring0 -> ring3 via iretq (frame de usuario no stack)
 ; syscall_gate: handler do int 0x80 (ring3 -> ring0, retorna via iretq)
 bits 64

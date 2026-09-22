@@ -1,5 +1,5 @@
 #!/bin/bash
-# Rebranding: nome do sistema "Thaís/Thais OS" -> "Siaht OS" (identificadores
+# Rebranding: nome do sistema "Thaís/Thais OS" -> "Siath OS" (identificadores
 # tecnicos thaisboot/thais.h/thais-*/libthais permanecem).
 cd "$(cd "$(dirname "$0")/.." && pwd)" || exit 1
 FILES="
@@ -30,9 +30,9 @@ src/userspace/thais-sh/README.md
 "
 for f in $FILES; do
     [ -f "$f" ] || continue
-    sed -i 's/Thaís OS/Siaht OS/g; s/Thais OS/Siaht OS/g; s/Thais OS/Siaht OS/g' "$f"
+    sed -i 's/Thaís OS/Siath OS/g; s/Thais OS/Siath OS/g; s/Thais OS/Siath OS/g' "$f"
 done
 echo '=== restantes (nao devem existir "Thais OS"/"Thaís OS") ==='
 grep -rn 'Thaís OS\|Thais OS' --include='*.c' --include='*.h' --include='*.asm' --include='*.md' --include='Makefile' . 2>/dev/null | grep -v '/build/' | grep -v '/.git/'
-echo '=== conferencia Siaht ==='
-grep -rn 'Siaht OS' --include='*.c' --include='*.h' --include='*.asm' --include='*.md' --include='Makefile' . 2>/dev/null | grep -v '/build/' | grep -v '/.git/' | head -30
+echo '=== conferencia Siath ==='
+grep -rn 'Siath OS' --include='*.c' --include='*.h' --include='*.asm' --include='*.md' --include='Makefile' . 2>/dev/null | grep -v '/build/' | grep -v '/.git/' | head -30

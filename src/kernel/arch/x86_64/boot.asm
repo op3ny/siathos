@@ -1,4 +1,4 @@
-; Siaht OS - entry point x86_64 (ThaisBoot)
+; Siath OS - entry point x86_64 (ThaisBoot)
 ; Made with love by Thais (op3n/op3ny)
 bits 64
 section .text

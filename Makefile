@@ -1,4 +1,4 @@
-# Siaht OS — Makefile (Linux nativo: elementary OS / Debian / Ubuntu) — x86_64 UEFI original (ThaisBoot)
+# Siath OS — Makefile (Linux nativo: elementary OS / Debian / Ubuntu) — x86_64 UEFI original (ThaisBoot)
 # Made with love by Thais (op3n/op3ny)
 CC ?= gcc
 LD ?= ld
@@ -51,7 +51,7 @@ KERNEL_OBJ := $(KERNEL_SRC:.c=.o) $(KERNEL_ASM:.asm=.o)
 
 KERNEL_ELF := $(BUILD_DIR)/kernel.elf
 BOOT_EFI := $(BUILD_DIR)/BOOTX64.EFI
-ISO := $(BUILD_DIR)/siaht.iso
+ISO := $(BUILD_DIR)/siath.iso
 
 all: $(USER_HEADERS) $(USER_CFG_HEADERS) $(KERNEL_ELF) $(BOOT_EFI)
 
@@ -126,7 +126,7 @@ run-headless: iso
 clean:
 	rm -rf $(BUILD_DIR) src/kernel/*.o src/kernel/arch/x86_64/*.o $(USER_HEADERS) $(USER_CFG_HEADERS)
 
-# prepara um pendrive UEFI bootavel do Siaht OS (WSL Debian, exige sudo):
+# prepara um pendrive UEFI bootavel do Siath OS (WSL Debian, exige sudo):
 #   make iso && sudo make usb DEV=/dev/sdX
 USB_DEV ?= /dev/sdX
 usb: iso

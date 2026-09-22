@@ -1,4 +1,4 @@
-# Siaht OS — BLUEPRINT TÉCNICO v0.1
+# Siath OS — BLUEPRINT TÉCNICO v1.0
 
 ## 1. Visão
 Micro OS original, não simulação. Kernel, FS, comandos, init, pacotes inéditos. Ancap implícito na mecânica, não no discurso.
@@ -41,7 +41,7 @@ Kernel não força start; `thais-init` propõe, usuário aceita. Sem dependênci
 - Baseado em `musl` para portabilidade
 
 ### 2.5 Runtimes Híbridos
-Fase 1 (atual): musl + libthais (wrappers capability) → compilar CPython 3.12 e Node 20 nativamente para Siaht OS.
+Fase 1 (atual): musl + libthais (wrappers capability) → compilar CPython 3.12 e Node 20 nativamente para Siath OS.
 Fase 2: camada `linux-compat` traduz syscalls Linux (open/read/write) para caps, permitindo rodar binários Linux estáticos.
 
 ## 3. Boot Splash Específico

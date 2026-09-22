@@ -21,7 +21,7 @@ uint64_t boot_kernel_phys = 0;
 void thais_main(thais_boot_info_t *bi){
     serial_init();
     boot_kernel_phys = (bi && bi->magic==THAIS_BOOT_MAGIC) ? bi->kernel_phys : 0;
-    kprint("[arkhe] Siaht OS iniciando... Made with love by Thais (op3n/op3ny)\n");
+    kprint("[arkhe] Siath OS v1.0.0 alpha iniciando... Made with love by Thais (op3n/op3ny)\n");
     thais_fb_t fb={0};
     bool have_fb=false;
     if(bi && bi->magic==THAIS_BOOT_MAGIC && bi->fb_addr){

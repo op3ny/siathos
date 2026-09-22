@@ -104,7 +104,7 @@ putu64:
 
 section .rodata
 hdr:
-    db "Memoria (Siaht OS)",0
+    db "Memoria (Siath OS)",0
 s_total:
     db "  total: ",0
 s_used:

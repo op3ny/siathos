@@ -1,4 +1,4 @@
-/* spud.h — library minimima para apps userspace do Siaht OS (MARCO 3+).
+/* spud.h — library minimima para apps userspace do Siath OS (MARCO 3+).
    Syscalls via int 0x80 (gate de interrupt), sem libc.
    Incluido em todos os apps: spoudazo, praxia, ls, cat, echo, ps, mem. */
 #ifndef SPUD_H

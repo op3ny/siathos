@@ -1,9 +1,9 @@
 #!/bin/bash
-# _mkusb.sh — prepara um pendrive UEFI bootavel do Siaht OS (no WSL Debian):
+# _mkusb.sh — prepara um pendrive UEFI bootavel do Siath OS (no WSL Debian):
 #   sudo bash scripts/_mkusb.sh /dev/sdX
 # Onde /dev/sdX e o pendrive (CUIDADO: TODOS os dados dele serao apagados).
 # Confere seguranca (block device, nao montado, nao /dev/sda sem FORCE).
-# Resultado: particao FAT32 'SIAHTOS' com EFI/BOOT/BOOTX64.EFI + kernel.elf.
+# Resultado: particao FAT32 'SIATHOS' com EFI/BOOT/BOOTX64.EFI + kernel.elf.
 set -e
 DEV="$1"
 [ -n "$DEV" ] || { echo "uso: sudo bash scripts/_mkusb.sh /dev/sdX"; exit 2; }
@@ -23,14 +23,14 @@ command -v mkfs.vfat >/dev/null || { echo "falta mkfs.vfat (dosfstools)."; exit 
 [ -f build/BOOTX64.EFI ] || { echo "falta build/BOOTX64.EFI — rode 'make iso' antes."; exit 2; }
 [ -f build/kernel.elf ] || { echo "falta build/kernel.elf — rode 'make iso' antes."; exit 2; }
 
-echo ">>> APAGANDO $DEV (particao nova FAT32 'SIAHTOS') em 5s... (Ctrl-C aborta)"
+echo ">>> APAGANDO $DEV (particao nova FAT32 'SIATHOS') em 5s... (Ctrl-C aborta)"
 sleep 5
 sgdisk -Z "$DEV"
 sgdisk -n 1:0:0 -t 1:0700 "$DEV"
 partprobe "$DEV" || true
 sleep 2
 PART="${DEV}1"
-mkfs.vfat -F 32 -n SIAHTOS "$PART"
+mkfs.vfat -F 32 -n SIATHOS "$PART"
 MP="$(mktemp -d)"
 mount "$PART" "$MP"
 mkdir -p "$MP/EFI/BOOT"
@@ -39,5 +39,5 @@ cp -f build/kernel.elf "$MP/kernel.elf"
 sync
 umount "$MP"
 rmdir "$MP"
-echo "Pendrive Siaht OS pronto em $PART"
+echo "Pendrive Siath OS pronto em $PART"
 echo "  -> boot: selecione no firmware o pendrive (UEFI) + habilite 'Legacy USB'"

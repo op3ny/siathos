@@ -1,4 +1,4 @@
-# Siaht OS — Status Técnico Honesto
+# Siath OS — Status Técnico Honesto
 
 > Este documento registra o que o sistema **realmente** é hoje (e o que **não** é),
 > sem promoção. Atualize sempre que a implementação mudar.

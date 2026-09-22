@@ -1,4 +1,4 @@
-; crt0.asm - entrada de app userspace (Siaht OS, ring 3) - compartilhado.
+; crt0.asm - entrada de app userspace (Siath OS, ring 3) - compartilhado.
 ; ABI: o _start recebe argc (rdi) e argv (rsi) via enter_user (ctx.arg1/arg2).
 ; O ELF e linkado em 0x200000000000 (user space) e mapeado por
 ; proc_create_user_regions no mesmo vaddr (PIC nao e obrigatorio).

@@ -1,4 +1,4 @@
-# Siaht OS — Dicionário de Diretórios (grego + função)
+# Siath OS — Dicionário de Diretórios (grego + função)
 
 Todos os nomes são transliterações gregas, função clara, sem `/usr`/`/etc` genérico.
 

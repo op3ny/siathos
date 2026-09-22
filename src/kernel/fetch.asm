@@ -138,7 +138,7 @@ putu64:
 
 section .rodata
 t_header:
-    db "Siaht OS",0
+    db "Siath OS",0
 s_total:
     db "Memoria total : ",0
 s_used:

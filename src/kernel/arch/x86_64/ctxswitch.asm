@@ -1,4 +1,4 @@
-; Siaht OS - context switch x86_64 (cooperative + first-start + resume por frame IRQ)
+; Siath OS - context switch x86_64 (cooperative + first-start + resume por frame IRQ)
 ; Made with love by Thais (op3n/op3ny)
 ;
 ; cpu_context_t layout (8-byte slots), matching thais.h:

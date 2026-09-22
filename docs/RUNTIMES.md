@@ -1,14 +1,14 @@
-# Siaht OS — Runtimes Híbridos (Python / Node / C++)
+# Siath OS — Runtimes Híbridos (Python / Node / C++)
 
 ## Objetivo: port nativo + compatibilidade Linux/BSD sem simulação
 
 ### Fase 1 — Nativo (atual blueprint)
-- **libc:** `musl` portado para Siaht OS (`/emporion/lib/musl`), wrappers `libthais` traduzem `open/read/write` → `cap_*` + `aisthesis_*`.
+- **libc:** `musl` portado para Siath OS (`/emporion/lib/musl`), wrappers `libthais` traduzem `open/read/write` → `cap_*` + `aisthesis_*`.
 - **C++:** `clang++` + `musl` + `libcxx` → binários ELF Thaís (mesmo formato mas syscalls próprias).
 - **Python:** CPython 3.12 cross-compilado com `--host=x86_64-thais` usando musl. Módulos precisam de `caps` para FS/rede.
 - **Node:** Node 20 cross com `musl`, V8 adaptado para `kinesis_spawn`.
 
-Exemplo em C++ para Siaht OS:
+Exemplo em C++ para Siath OS:
 ```cpp
 // /idios/thais/app.cpp
 #include <thais/cap.h>

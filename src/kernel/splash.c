@@ -15,11 +15,11 @@ void splash_show(thais_fb_t *fb){
     box_y=(int)(fb->height/2 - box_h/2);
     fb_draw_rect(box_x-2,box_y-2,box_w+4,box_h+4, fb_color(0x7a,0x5a,0xff));
     fb_draw_rect(box_x,box_y,box_w,box_h, fb_color(0x14,0x14,0x1e));
-    const char *t1="Siaht OS";
+    const char *t1="Siath OS v1.0.0 alpha";
     int t1_w=(int)strlen(t1)*8*2;
     int t1_x=(int)(fb->width/2 - t1_w/2);
     fb_draw_text_scaled(t1_x, box_y+18, t1, fb_color(0xff,0xff,0xff), fb_color(0x14,0x14,0x1e), 2);
-    const char *t2="O Siaht OS esta iniciando... Aguarde";
+    const char *t2="O Siath OS esta iniciando... Aguarde";
     int t2_x=(int)(fb->width/2 - strlen(t2)*8/2);
     if(t2_x < box_x+8) t2_x=box_x+8;
     fb_draw_text(t2_x, box_y+58, t2, fb_color(0xcc,0xcc,0xdd), fb_color(0x14,0x14,0x1e));

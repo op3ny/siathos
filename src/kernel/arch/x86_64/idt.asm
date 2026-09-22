@@ -1,4 +1,4 @@
-; Siaht OS - IDT / ISR / IRQ stubs x86_64
+; Siath OS - IDT / ISR / IRQ stubs x86_64
 ; Cada vector 0..47 tem um stub que empurra error code + numero, salva todos
 ; os GPRs e chama irq_common_handler(int_no, err). Exceptions sem error code
 ; recebem dummy 0. iretq ao final restaura a CPU.
